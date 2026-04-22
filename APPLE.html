@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple.global</title>
+    <style>
+        * {
+           font-family: BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+        }
+        header {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 32px;
+           gap: 0px;
+           
+        }
+        .header-logo svg{
+            width: 20px; height: 20px;
+            
+        }
+       
+        
+        .nav-content{
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            gap: 13px;
+            font-size: small;
+            
+        }
+        .hero-section  {
+           height: 75vh;
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           background-image: url(https://www.apple.com/v/home/a/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_largetall.jpg);
+        }
+        .hero-text{
+           display: flex;
+           flex-direction: column;
+            align-items: center;
+        }
+        .hero-text h1{
+          font-size: 50px;
+          font-weight: bolder;
+          margin-bottom: -1px;
+        }
+        .hero-text span{
+            font-size: 23px;
+            font-weight: 500;
+        }
+        .hero-button{
+            gap: 25px;
+            border-radius: 20px;
+            padding: 10px; 10px;
+        }
+        .hero-button .button1{
+            background-color: lightskyblue;
+            border: 1px solid   white;
+            color: azure;
+            width: 100px; height: 50px;
+            border-radius: 20px;
+            
+
+        }
+        .hero-button .button2{
+           width: 100px; height: 50px;
+           border-radius: 20px;
+           border-color: cornflowerblue;
+         color: lightskyblue;
+        }
+        .hero-button .button2:hover{
+            background-color: rgb(6, 61, 243);
+        }
+        .second-section{
+            background-image: url(https://www.apple.com/v/home/a/images/heroes/macbook-neo/hero_macbook_neo__gnm3snkti4a6_largetall.jpg);
+            height: 70vh;
+            background-size: center;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        .second-section-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .search-icons svg{
+            width: 20px ; height: 20px;
+            display: inline-block;
+            padding: 8px 8px;
+
+        }
+        .store{
+            position: relative;
+        }
+        .store-dropdown{
+            position: absolute;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            width: 99vw;
+            height: 450px;
+            padding: 19px 500px;
+            margin-left: -615px;
+        }
+        .store-dropdown ul{
+            list-style: none;
+             
+        }
+       .shop{
+        font-size: 22px;
+        font-weight: 600;
+       }
+       .shop .title{
+        color: grey;
+        font-size: 14px;
+       }
+
+       .title{
+        padding: 12px 0px;
+        color: grey;
+       }
+       .store-dropdown{
+       visibility: hidden;
+       }
+       .store:hover .store-dropdown{
+        visibility: visible;
+       }
+       
+       
+       
+       .second-section-text h1{
+        font-size: 52px;
+        
+       }
+       .second-section-text span{
+        font-size: 30px;
+        margin-top: -40px;
+        margin-bottom: 10px;
+       }
+.second-section-button .button1{
+    background-color:rgb(116, 162, 248);
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: white;
+    border: solid 1px rgb(116, 162, 248);
+    
+}
+.second-section-button .button2{
+    background-color: azure;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: solid 1px rgb(118, 118, 230);
+    color: rgb(113, 117, 117);
+
+}
+.button2:hover{
+    background-color: aqua;
+}
+.second-section-button{
+    display:flex ;
+    gap: 10px;
+    justify-content: center;  
+}
+              
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="https://www.apple.com/"><svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"></path> </g></svg></a>
+        </div>
+        <nav>
+            <ul class="nav-content">
+             <li class="store"> Store
+             <div class="store-dropdown">
+                <ul class="shop">
+                    <li class="title"> Shop
+                    <li>Iphone</li>
+                    <li>Mac</li>
+                    <li>Ipad</li>
+                    <li>Ipod</li>
+                    <li>Airpods</li>
+                </ul>
+                <ul class="Quick-links">
+                    <li class="title">Quick links</li>
+                    <li>Find a store</li>
+                    <li>Order status</li>
+                    <li>Apple trade in</li>
+                    <li>Financing</li>
+                </ul>
+                <ul class="shop-special-stores">
+                    <li class="title"> Special Stores</li>
+                    <li>certified refurbished</li>
+                    <li>education</li>
+                    <li>business</li>
+                    <li>veterans and military</li>
+                    <li>Government</li>
+                </ul>
+            </div>
+             </li>
+             <li>Mac</li>
+             <li>iPad</li>
+             <li>iphone</li>
+             <li>Watch</li>
+             <li>Vision</li>
+             <li>AirPods</li>
+             <li>TV and Home</li>
+             <li>Entertainment</li>
+             <li>Accessories</li>
+             <li>Support</li>
+            </ul>
+        </nav>
+        <div class="search-icons">
+             <svg fill="#000000" width="173px" height="173px" viewBox="-3.13 -3.13 34.68 34.68" id="_02_-_Search_Button" data-name="02 - Search Button" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00028423"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.45476799999999995"></g><g id="SVGRepo_iconCarrier"> <path id="Path_215" data-name="Path 215" d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z" transform="translate(-2.31 -2.547)" fill-rule="evenodd"></path> <path id="Path_216" data-name="Path 216" d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z" transform="translate(-2.31 -2.547)" fill-rule="evenodd"></path> </g></svg>
+             <svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.15"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.51132 9.177L6.27532 18.177C6.34062 19.1879 7.16948 19.9803 8.18232 20H16.8253C17.8378 19.9798 18.6661 19.1875 18.7313 18.177L19.4953 9.177C19.5542 8.63047 19.3817 8.08424 19.0196 7.67066C18.6575 7.25708 18.1388 7.01389 17.5893 7H7.41732C6.8678 7.01389 6.34917 7.25708 5.98707 7.67066C5.62497 8.08424 5.45246 8.63047 5.51132 9.177Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16.703 6.66154C16.5161 7.03118 16.6642 7.48236 17.0338 7.66929C17.4035 7.85621 17.8547 7.7081 18.0416 7.33846L16.703 6.66154ZM17.3515 5.71218L18.0095 5.35226V5.35226L17.3515 5.71218ZM16.2783 5L16.3543 4.25386C16.3291 4.25129 16.3037 4.25 16.2783 4.25V5ZM8.72831 5V4.25C8.70292 4.25 8.67755 4.25129 8.6523 4.25386L8.72831 5ZM7.65513 5.71218L6.99714 5.35226L6.99714 5.35226L7.65513 5.71218ZM6.96502 7.33846C7.15195 7.7081 7.60313 7.85621 7.97277 7.66929C8.34241 7.48236 8.49052 7.03118 8.3036 6.66154L6.96502 7.33846ZM10.7533 11C10.7533 10.5858 10.4175 10.25 10.0033 10.25C9.5891 10.25 9.25331 10.5858 9.25331 11H10.7533ZM10.0033 11.5H9.25331H10.0033ZM15.7533 11C15.7533 10.5858 15.4175 10.25 15.0033 10.25C14.5891 10.25 14.2533 10.5858 14.2533 11H15.7533ZM18.0416 7.33846C18.3586 6.71151 18.3466 5.96863 18.0095 5.35226L16.6935 6.0721C16.7935 6.25502 16.7971 6.47548 16.703 6.66154L18.0416 7.33846ZM18.0095 5.35226C17.6723 4.73588 17.0533 4.32507 16.3543 4.25386L16.2023 5.74614C16.4097 5.76727 16.5934 5.88919 16.6935 6.0721L18.0095 5.35226ZM16.2783 4.25H8.72831V5.75H16.2783V4.25ZM8.6523 4.25386C7.95335 4.32507 7.3343 4.73588 6.99714 5.35226L8.31313 6.0721C8.41318 5.88919 8.5969 5.76727 8.80432 5.74614L8.6523 4.25386ZM6.99714 5.35226C6.65998 5.96863 6.64797 6.71151 6.96502 7.33846L8.3036 6.66154C8.20951 6.47548 8.21307 6.25502 8.31313 6.0721L6.99714 5.35226ZM9.25331 11V11.5H10.7533V11H9.25331ZM9.25331 11.5C9.25331 13.2949 10.7084 14.75 12.5033 14.75V13.25C11.5368 13.25 10.7533 12.4665 10.7533 11.5H9.25331ZM12.5033 14.75C14.2982 14.75 15.7533 13.2949 15.7533 11.5H14.2533C14.2533 12.4665 13.4698 13.25 12.5033 13.25V14.75ZM15.7533 11.5V11H14.2533V11.5H15.7533Z" fill="#000000"></path> </g></svg>
+         </div>
+    </header>
+
+<main>
+    <section class="hero-section">
+       <div class="hero-text">  
+        <h1>iPhone</h1>
+        <span>Meet the latest iPhone lineup.</span>
+       </div>
+       <div class="hero-button">
+        <button class= "button1">learn more</button>
+        <button class="button2">shop Iphone</button>
+       </div>
+    </section>
+    <section class="second-section">
+         <div class="second-section-text">
+            <h1>MacBook Neo</h1>
+            <span>Amazing Mac. Amazing surprise</span>
+         </div>
+         <div class="second-section-button">
+            <button class="button1">
+                learn more
+            </button>
+            <button class="button2">
+                Buy
+            </button>
+         </div>
+    </section>
+</main>
+</body>
+</html>
