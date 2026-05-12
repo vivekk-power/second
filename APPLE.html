@@ -6,29 +6,39 @@
     <title>Apple.global</title>
     <style>
         * {
+         
            font-family: BlinkMacSystemFont, "Segoe UI",
                  Roboto, Helvetica, Arial, sans-serif;
+                 margin: 0;
+                 padding: 0;
+                 
         }
         header {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           height: 32px;
-           gap: 0px;
+           display:flex;
+           flex-direction: row;
+           gap: 25px;
+    justify-content:space-around;
+    align-items:center;
+    justify-content: center; 
+    height:44px;
+
            
         }
-        .header-logo svg{
-            width: 20px; height: 20px;
+ .header-logo svg{
+            width: 15px; height: 15px;
+            display: flex;
+            align-items: center;
+
             
-        }
-       
-        
+ }
         .nav-content{
             list-style: none;
             cursor: pointer;
             display: flex;
-            gap: 13px;
+            gap: 30px;
             font-size: small;
+            display: flex;
+            align-items: center;
             
         }
         .hero-section  {
@@ -49,79 +59,110 @@
         .hero-text h1{
           font-size: 50px;
           font-weight: bolder;
-          margin-bottom: -1px;
+          
         }
         .hero-text span{
             font-size: 23px;
             font-weight: 500;
         }
         .hero-button{
-            gap: 25px;
+            display: flex;
+            gap: 20px;
             border-radius: 20px;
-            padding: 10px; 10px;
+            padding: 10px 10px;
         }
-        .hero-button .button1{
-            background-color: lightskyblue;
-            border: 1px solid   white;
-            color: azure;
-            width: 100px; height: 50px;
-            border-radius: 20px;
+        .button1{
+            background-color:rgb(0, 113, 227) ;
+          padding: 12px 24px;
+            color: rgb(238, 243, 243);
             
-
+            border-radius: 20px;
+          border: none;
+          font-size: 1em;
+          font-weight: 600;
+            
         }
-        .hero-button .button2{
-           width: 100px; height: 50px;
+        .button2{
+           padding: 10px 20px;
            border-radius: 20px;
-           border-color: cornflowerblue;
-         color: lightskyblue;
+         color:rgb(0, 113, 227);
+         font-weight: 500; font-size: 1em;
+          background-color: transparent;
+    color:  rgb(0, 113, 227);
+    border: solid 1px  rgb(0, 113, 227);
+         
         }
         .hero-button .button2:hover{
-            background-color: rgb(6, 61, 243);
+            background-color: rgb(0, 113, 227);
         }
         .second-section{
             background-image: url(https://www.apple.com/v/home/a/images/heroes/macbook-neo/hero_macbook_neo__gnm3snkti4a6_largetall.jpg);
             height: 70vh;
-            background-size: center;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-        
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
         }
         .second-section-text{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
            
         }
+        .second-section-text p{
+              font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
         .search-icons svg{
-            width: 20px ; height: 20px;
-            display: inline-block;
+            width: 15px ; height: 15px;
             padding: 8px 8px;
+            align-items: center;
+          
 
         }
         .store{
             position: relative;
         }
         .store-dropdown{
-            position: absolute;
+            position: absolute; top: 30px; left: -515px;
             display: flex;
+            gap: 50px;
             background-color: rgb(255, 255, 255);
             width: 99vw;
             height: 450px;
-            padding: 19px 500px;
-            margin-left: -615px;
+            
+           
+        }
+        .store-menu-container{
+            display: flex;
+           justify-content: center;
+            position: absolute; left: 500px;
+            gap: 75px;
         }
         .store-dropdown ul{
             list-style: none;
              
         }
        .shop{
-        font-size: 22px;
+        font-size: 2.2em;
         font-weight: 600;
+        
        }
+       .shop li{
+        line-height: 40px;
+       }
+       
        .shop .title{
         color: grey;
         font-size: 14px;
        }
+       
 
        .title{
         padding: 12px 0px;
@@ -133,8 +174,21 @@
        .store:hover .store-dropdown{
         visibility: visible;
        }
-       
-       
+       .Quick-links li{
+        font-size: 1.1em;
+        line-height: 20px;
+       }
+       .Quick-links .title{
+        font-size: 1em;
+        font-weight: 500;
+       }
+       .shop-special-stores h6{
+        font-size: 1em;
+        font-weight: 500;
+       }
+       .shop-special-stores li{
+        line-height: 20px;
+       }
        
        .second-section-text h1{
         font-size: 52px;
@@ -145,35 +199,202 @@
         margin-top: -40px;
         margin-bottom: 10px;
        }
-.second-section-button .button1{
-    background-color:rgb(116, 162, 248);
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    padding: 10px 10px;
-    color: white;
-    border: solid 1px rgb(116, 162, 248);
-    
-}
-.second-section-button .button2{
-    background-color: azure;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    padding: 10px 10px;
-    border: solid 1px rgb(118, 118, 230);
-    color: rgb(113, 117, 117);
 
-}
 .button2:hover{
-    background-color: aqua;
+    background-color:rgb(0, 113, 227);;
+    color: white;
 }
 .second-section-button{
     display:flex ;
     gap: 10px;
     justify-content: center;  
 }
-              
+.banner-section-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+    height: 60vh;
+    padding: 10px 10px;
+    overflow: hidden;
+    position: relative;
+}
+.banner-section-left{
+    width: 50%;
+    height: 100%;
+    background-image:url(https://www.apple.com/v/home/cm/images/promos/apple-watch-pride/promo_apple_watch_pride__9efimjc2tteu_large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.banner-section-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/macbook-neo/promo_macbook_neo__ghopmquousii_large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.banner-section-info{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute; top: 30px;
+}
+.banner-title{
+    width: 30%;
+    flex-wrap: wrap;
+    color: black;
+   
+
+}
+.banner-title h3{
+    margin: 0;
+    font-weight: 700;
+    font-size: 2em;
+}
+.banner-title p{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 0;
+}
+.banner-title svg{
+    width: 30px;
+    
+}
+.banner-section-button{
+    display: flex;
+    gap: 15px;
+}
+.banner-section-button button{
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+   background-color:  rgb(0, 113, 227);
+
+    
+}
+.banner-section-info2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.banner-section-button .btn2{
+    background-color:transparent;
+    color:  rgb(0, 113, 227);
+    border: solid 1px  rgb(0, 113, 227);
+}
+/* we added the row2 class, as we can give many class according to need for that particular div so,  */
+.row2{
+ background-image: url(https://www.apple.com/v/home/cm/images/promos/apple-watch-ultra-3/promo_apple_watch_ultra3__bwvslhbxx99e_large.jpg);
+}
+.row2-title{
+    color: white;
+
+}
+.row2-right{
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+}
+.row3{
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
+}
+.row3-right{
+    background-image: url(https://www.apple.com/v/home/cm/images/promos/apple-card/promo_apple_card__5cm7draujpey_large.jpg);
+}
+.btn2:hover{
+    background-color: rgb(0, 113, 227);
+    color: white;
+}
+.apple-tv-container{
+    background-color:rgb(245,245,247) ;
+    
+    display: flex;
+    flex-direction: row;
+      width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden;  */
+    margin-top: 20px;
+    gap: 15px;
+}
+.apple-tv-banner{
+   width: 92vw;            
+    aspect-ratio: 16 / 9;   
+    max-width: 1250px;
+    border-radius: 18px; 
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/pa_Dd2CLL-BlWQRqIurClw/1250x668sr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+/* posiitonj le posiiton set garyo! inset vaneko right 0 bottom 0 top 0 left 0 hoo ! so, tyo banner vanda daya baya janna content " vaneko there is content but no content yesle html ma euta div create garxa ra content jastai vayo! before ra after vaneko pseudo elements hoo! it is mainly used for overlay. if you want the overlay after the text then the use of after is done and before the text then we use the before as we are doing. " */
+.apple-tv-banner::before{ 
+    position: absolute;      
+    inset: 0;    
+    content: "";
+/* linear gradient means overlay tara kata kati laune vanne we can control. to top vanesi we move from bottom. rgba(000) chai color ho vanesi last ko opacity ho! then 0% vaneko botoom vaneko ekdam last bottom vaneko then, 25% vaneko tyo vanda alli  mathi ani 50% vaneko alli ani yestai continue hunxa. ra mathi audai jada opacity pani ghatdai gayeko xxa!
+ */
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.60) 0%,
+        rgba(0,0,0,0.45) 25%,
+        rgba(0,0,0,0.15) 50%,
+        rgba(0,0,0,0) 70%
+    );
+
+}
+.apple-tv-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute; bottom: 90px; left: 100px;
+   gap: 26px;
+}
+.apple-tv-content{
+    display: flex;
+    align-items: center;
+    color: rgb(240, 240, 240);
+
+}
+.apple-tv-content h3{
+    font-size: 1.3em;
+}
+.apple-tv-content span{
+    font-size: 1.23em;
+}
+.stream-button button{
+    padding: 12px 15px;
+    background-color: rgb(253, 253, 255);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+.banner2{
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/za7Mqkp-OSK_2BHWq8AtSQ/1250x668sr.jpg);
+}
+.banner3{
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features/v4/33/9e/cf/339ecfe7-f515-8594-2e48-d991803409ea/5a944fdc-acd7-47a8-89e7-274d84cf4276.png/1250x668sr.jpg);
+}
+
+        
 </style>
 </head>
 <body>
@@ -184,9 +405,13 @@
         <nav>
             <ul class="nav-content">
              <li class="store"> Store
-             <div class="store-dropdown">
+
+                <div class="store-dropdown">
+                    <div class="store-menu-container">
+
+                    
                 <ul class="shop">
-                    <li class="title"> Shop
+                   <h6 class="title"> Shop</h6>
                     <li>Iphone</li>
                     <li>Mac</li>
                     <li>Ipad</li>
@@ -194,14 +419,14 @@
                     <li>Airpods</li>
                 </ul>
                 <ul class="Quick-links">
-                    <li class="title">Quick links</li>
+                    <h6 class="title">Quick links</h6>
                     <li>Find a store</li>
                     <li>Order status</li>
                     <li>Apple trade in</li>
                     <li>Financing</li>
                 </ul>
                 <ul class="shop-special-stores">
-                    <li class="title"> Special Stores</li>
+                    <h6 class="title"> Special Stores</h6>
                     <li>certified refurbished</li>
                     <li>education</li>
                     <li>business</li>
@@ -220,7 +445,7 @@
              <li>Entertainment</li>
              <li>Accessories</li>
              <li>Support</li>
-            </ul>
+            </ul></div>
         </nav>
         <div class="search-icons">
              <svg fill="#000000" width="173px" height="173px" viewBox="-3.13 -3.13 34.68 34.68" id="_02_-_Search_Button" data-name="02 - Search Button" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00028423"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.45476799999999995"></g><g id="SVGRepo_iconCarrier"> <path id="Path_215" data-name="Path 215" d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z" transform="translate(-2.31 -2.547)" fill-rule="evenodd"></path> <path id="Path_216" data-name="Path 216" d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z" transform="translate(-2.31 -2.547)" fill-rule="evenodd"></path> </g></svg>
@@ -236,25 +461,179 @@
        </div>
        <div class="hero-button">
         <button class= "button1">learn more</button>
-        <button class="button2">shop Iphone</button>
+        <button class="button2">Shop Iphone</button>
        </div>
     </section>
     <section class="second-section">
          <div class="second-section-text">
             <h1>MacBook Neo</h1>
-            <span>Amazing Mac. Amazing surprise</span>
+            <p>Amazing Mac. Amazing surprise</p>
          </div>
          <div class="second-section-button">
             <button class="button1">
-                learn more
+                 learn more
             </button>
             <button class="button2">
-                Buy
+                 Buy
             </button>
          </div>
     </section>
-    button class="button1">learn more</button>
+
+    <section class="banner-section">
+        <div class="banner-section-container">
+            <div class="banner-section-left">
+                  <div class="banner-section-info">
+                    <div class="banner-title">
+ <h3>                                                <svg viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>apple [#173]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485" id="apple-[#173]"> </path> </g> </g> </g> </g></svg>WATCH</h3>
+                        <p>Radiate Pride with the vibrant new Pride Edition Sport Loop.</p>
+                    </div> 
+                    <div class="banner-section-button">
+                    <button>Buy</button>
+                  </div>
+                  </div>
+                 
+            </div>
+
+            <div class="banner-section-right">
+                <div class="banner-section-info2">
+                 <div class="banner-title">
+                    <h3>MacBook Neo</h3>
+                    <p>Amazing Mac. Surprising price</p>
+                 </div>
+                 <div class="banner-section-button">
+                    <button>Learn more</button>
+                    <button class="btn2">Buy</button>
+                  </div>
+              </div>
+              </div>
+            </div>
+    </section>
+
+    <section class="banner-section">
+        <div class="banner-section-container">
+            <!-- banner-section-left ko property ta chaiyo but we need to change the background image in row 2 so, we added the another class in that particu;lar div with row2 and then change the background-image from css.  -->
+            <div class="banner-section-left row2">  
+
+                  <div class="banner-section-info">
+                    <!-- we dont need to change anything to that div but we need to change in banner title vitra ko text so, we add another class for that banner-title row2-title ani then we change things....  -->
+                    <div class="banner-title row2-title">
+ <h3>                   <svg viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>apple [#173]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485" id="apple-[#173]"> </path> </g> </g> </g> </g></svg><b>WATCH</b> ULTRA3 </h3>
+                        <p>Personal beast</p>
+                    </div> 
+                    <div class="banner-section-button">
+                        <button>Learn more</button>
+                    <button class="btn2">Buy</button>
+                  </div>
+                  </div>
+                 
+            </div>
+
+            <div class="banner-section-right">
+                <div class="banner-section-info2 row2-right">
+                 <div class="banner-title row2-title-right">
+                    <h3>AirPods Pro 3</h3>
+                    <p>The world's best in-ear Active Noise Cancellation</p>
+                 </div>
+                 <div class="banner-section-button">
+                     <button>Learn more</button>
+                    <button class="btn2">Buy</button>
+                  </div>
+              </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="banner-section">
+        <div class="banner-section-container">
+            <div class="banner-section-left row3">
+                  <div class="banner-section-info row3-title">
+                    <div class="banner-title">
+                   <h3><svg viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>apple [#173]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485" id="apple-[#173]"> </path> </g> </g> </g> </g></svg>Trade In</h3>
+                        <p>Get up to $195-$685 in credit when you trade in iPhone 13 or higher.</p>
+                    </div> 
+                    <div class="banner-section-button">
+                    <button>Get your estimate</button>
+                  </div>
+                  </div>
+                 
+            </div>
+
+            <div class="banner-section-right">
+                <div class="banner-section-info2 row3-right">
+                 <div class="banner-title row3-title-right">
+                    <h3>  <svg viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>apple [#173]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485" id="apple-[#173]"> </path> </g> </g> </g> </g></svg>Card</h3>
+                    <p>Get up to 3% Daily Cash back with every purchase</p>
+                 </div>
+                 <div class="banner-section-button">
+                    <button>Learn more</button>
+                    <button class="btn2">Apply now</button>
+                  </div>
+              </div>
+              </div>
+        </div>
+    </section>
+    </div> 
+    </div> 
+    </section>
+
+    <!-- for next floating section where the flims and series are shown. first create a div container for flims and series. then the pictures are available so, make it a backgroiund and then add the folowing task buttons.  -->
+     <section class="apple-tv">
+
+                    <div class="apple-tv-container">
+                          <div class="apple-tv-banner">
+                              <div class="apple-tv-info-container">
+                                  <div class="stream-button"><button>Stream now</button></div>
+                                 <div class="apple-tv-content"> 
+                                    <h3>Drama &bull;</h3> 
+                                  <span>is it a crime to want more?</span>
+                                </div>
+                              </div>
+                          </div>
+
+                    <div class="apple-tv-container">
+                          <div class="apple-tv-banner banner2">
+                              <div class="apple-tv-info-container">
+                                  <div class="stream-button"><button>Stream now</button></div>
+                                 <div class="apple-tv-content"> 
+                                    <h3>Thriller &bull;</h3> 
+                                  <span>They shared everything but the truth.</span>
+                                </div>
+                              </div>
+                          </div>
+                    
+                    </div>
+                    <div class="apple-tv-container">
+                          <div class="apple-tv-banner banner3">
+                              <div class="apple-tv-info-container ">
+                                  <div class="stream-button"><button>See the schedule</button></div>
+                                 <div class="apple-tv-content"> 
+                                    <h3>Live MLB</h3> 
+                                  <span>games, every friday</span>
+                                </div>
+                              </div>
+                          </div>
+                    
+                    </div>
+                    <div class="apple-tv-container">
+                          <div class="apple-tv-banner banner4">
+                              <div class="apple-tv-info-container">
+                                  <div class="stream-button"><button>Catch up now</button></div>
+                                 <div class="apple-tv-content"> 
+                                    <h3>Comedy &bull;</h3> 
+                                  <span>The new season premiers August 5. You better believe it.</span>
+                                </div>
+                              </div>
+                          </div>
+                    
+                    </div>
+                    </div>
+
+     </section>
+
 </main>
-helloooo
+
+
 </body>
 </html>
+
+
